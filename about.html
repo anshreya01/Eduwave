@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduWavee</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background: url('images/background.jpg') no-repeat center center fixed; 
+            background-size: cover;
+            padding-top: 56px;
+        }
+        .heading {
+
+            color: black;
+        }
+        .content-section {
+            padding: 60px 0;
+            color:rgb(2, 12, 22);
+        }
+        .content-section h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .navbar {
+            background-color: transparent; /* Transparent navbar */
+            transition: background-color 0.3s ease; /* Smooth transition for background color */
+        }
+        .navbar.fixed-top.navbar-scrolled {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background when scrolled */
+        }
+        .navbar .navbar-brand,
+        .navbar .nav-link {
+            color: rgba(0, 0, 0, 0.5); /* Text color for links */
+        }
+        .navbar .nav-link:hover {
+            color: rgba(0, 0, 0, 0.5); /* Hover color for links */
+        }
+        .navbar-toggler-icon {
+            background-color: #fff; /* Hamburger icon color */
+        }
+        .content-section p {
+            font-size: 1.5rem;
+            line-height: 1.6;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg  background-color: rgba(0, 0, 0, 0.5); fixed-top">
+      <a class="navbar-brand" href="index.html">Eduwave</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="courses.html">Courses</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+            </li>
+          </ul>
+      </div>
+  </nav>
+    <!-- About Section -->
+    <div class="container mt-5 pt-5">
+        <div class="content-section">
+            <h2 class="heading">About Us</h2>
+            <p>Welcome to Eduwave, where knowledge meets innovation. Established with a vision to democratize education, Eduwave strives to empower learners worldwide through accessible, high-quality online courses.</p>
+            <p>Our mission is to bridge the gap between ambition and achievement by offering a diverse range of courses that cater to the needs of learners at all stages of their educational journey. Whether you're a student preparing for exams, a professional aiming to upskill, or an enthusiast exploring new interests, Eduwave provides a platform where learning is engaging, interactive, and rewarding.</p>
+            <p>At Eduwave, we leverage cutting-edge technology to create a seamless learning experience. Our dedicated team of educators and technologists ensures that each course is meticulously designed to foster knowledge retention and practical application. Join us in reshaping the future of education, where boundaries are transcended, and opportunities are limitless.</p>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

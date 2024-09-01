@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduwave Website</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background: url('images/background.jpg') no-repeat center center fixed; 
+            background-size: cover;
+            padding-top: 56px;
+            color: rgb(2, 12, 22);; /* Text color on top of the background image */
+        }
+        .navbar {
+            background-color: transparent; /* Transparent navbar */
+            transition: background-color 0.3s ease; /* Smooth transition for background color */
+        }
+        .navbar.fixed-top.navbar-scrolled {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background when scrolled */
+        }
+        .navbar .navbar-brand,
+        .navbar .nav-link {
+            color: rgba(0, 0, 0, 0.5); /* Text color for links */
+        }
+        .navbar .nav-link:hover {
+            color: rgba(0, 0, 0, 0.5); /* Hover color for links */
+        }
+        .navbar-toggler-icon {
+            background-color: #fff; /* Hamburger icon color */
+        }
+        .content-section {
+            padding: 60px 0;
+        }
+        .card {
+            background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+            color:rgb(2, 12, 22); /* Text color */
+            border: none; /* No border */
+        }
+        .card-title {
+            color:rgb(2, 12, 22); /* Card title text color */
+        }
+        .card-text {
+            color:rgb(2, 12, 22); /* Card text color */
+        }
+        .heading{
+           color: rgb(2, 12, 22);
+           padding-top: 80px;
+           text-align: center;
+           
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg  background-color: rgba(0, 0, 0, 0.5); fixed-top">
+        <a class="navbar-brand" href="index.html">Eduwave</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="courses.html">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <h1 class="heading">Our Courses</h1>
+
+    <!-- Courses Content -->
+    <div class="container mt-5 pt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="mb-4">Technical Courses</h2>
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <img src="images/web.jpg" class="card-img-top" alt="Web Development">
+                            <div class="card-body">
+                                <h5 class="card-title">Web Development</h5>
+                                <p class="card-text">Learn the fundamentals of web development including HTML, CSS, JavaScript, and frameworks like Bootstrap. Build interactive websites and understand front-end and back-end concepts.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <img src="images/os.jpeg" class="card-img-top" alt="Operating Systems">
+                            <div class="card-body">
+                                <h5 class="card-title">Operating Systems</h5>
+                                <p class="card-text">Explore the principles of operating systems, including process management, memory management, file systems, and security. Gain insights into modern OS architectures.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <img src="images/sh.png" class="card-img-top" alt="System Hardware">
+                            <div class="card-body">
+                                <h5 class="card-title">System Hardware</h5>
+                                <p class="card-text">Understand computer hardware components such as CPUs, memory, storage devices, and peripherals. Learn about assembly, maintenance, and troubleshooting techniques.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <img src="images/dsa.jpg" class="card-img-top" alt="Data Structures and Algorithms">
+                            <div class="card-body">
+                                <h5 class="card-title">Data Structures and Algorithms</h5>
+                                <p class="card-text">Study fundamental data structures (arrays, linked lists, trees, graphs) and algorithms (sorting, searching, dynamic programming). Develop problem-solving skills and algorithmic thinking.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h2 class="mb-4">Personal Development Courses</h2>
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <img src="images/ip.png" class="card-img-top" alt="Interview Preparation">
+                            <div class="card-body">
+                                <h5 class="card-title">Interview Preparation</h5>
+                                <p class="card-text">Master interview techniques, including resume writing, behavioral questions, technical interviews, and mock interviews. Boost confidence and performance in job interviews.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <img src="images/cs.jpeg" class="card-img-top" alt="Communication Skills">
+                            <div class="card-body">
+                                <h5 class="card-title">Communication Skills</h5>
+                                <p class="card-text">Enhance verbal and written communication skills for professional settings. Learn effective communication strategies, public speaking, and business writing.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <img src="images/gd.jpg" class="card-img-top" alt="Group Discussion Techniques">
+                            <div class="card-body">
+                                <h5 class="card-title">Group Discussion Techniques</h5>
+                                <p class="card-text">Develop skills to lead and participate in group discussions effectively. Learn strategies for idea articulation, persuasion, and conflict resolution.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <img src="images/apti.png" class="card-img-top" alt="Aptitude Training">
+                            <div class="card-body">
+                                <h5 class="card-title">Aptitude Training</h5>
+                                <p class="card-text">Prepare for aptitude tests commonly used in job placements. Practice numerical reasoning, logical reasoning, and verbal reasoning exercises.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <img src="images/pd.jpg" class="card-img-top" alt="Personality Development">
+                            <div class="card-body">
+                                <h5 class="card-title">Personality Development</h5>
+                                <p class="card-text">Focus on personal growth and professional behavior. Topics include leadership qualities, time management, stress management, and building self-confidence.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduwave Website</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background: url('images/background.jpg') no-repeat center center fixed; 
+            background-size: cover;
+            padding-top: 56px;
+        }
+        .carousel-caption {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .carousel-inner img {
+            padding-left: 180px;
+            padding-top: 40px;
+            max-height: 450px;
+            max-width: 1090px;
+            object-fit: cover;
+            color:rgb(2, 12, 22);
+        }
+        .navbar {
+            background-color: transparent; /* Transparent navbar */
+            transition: background-color 0.3s ease; /* Smooth transition for background color */
+        }
+        .navbar.fixed-top.navbar-scrolled {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background when scrolled */
+        }
+        .navbar .navbar-brand,
+        .navbar .nav-link {
+            color: rgba(0, 0, 0, 0.5); /* Text color for links */
+        }
+        .navbar .nav-link:hover {
+            color: rgba(0, 0, 0, 0.5); /* Hover color for links */
+        }
+        .navbar-toggler-icon {
+            background-color: #fff; /* Hamburger icon color */
+        }
+        
+        .content-section {
+            padding: 60px 0;
+            color:rgb(2, 12, 22);
+        }
+        .card {
+            background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+            color:rgb(2, 12, 22); /* Text color */
+            border: none; /* No border */
+        }
+        .card-title {
+            color:rgb(2, 12, 22); /* Card title text color */
+        }
+        .card-text {
+            color:rgb(2, 12, 22); /* Card text color */
+        }
+        .welcome-section {
+            text-align: center;
+            color:rgb(2, 12, 22);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            padding: 60px 20px;
+        }
+        .welcome-section h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .welcome-section p {
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg  background-color: rgba(0, 0, 0, 0.5); fixed-top">
+        <a class="navbar-brand" href="index.html">Eduwave</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="courses.html">Courses</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+            </li>
+        </ul>
+        </div>
+    </nav>
+
+    <!-- Welcome Section -->
+    <div class="container mt-5 pt-5">
+        <div class="welcome-section">
+            <h1>Welcome to Eduwave</h1>
+            <p>Your gateway to knowledge and learning.</p>
+        </div>
+    </div>
+
+    <!-- Carousel Slider -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/slide1.jpg" class="d-block w-100" alt="Slide 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Learn Anytime, Anywhere</h5>
+                    <p>Access our courses from any device at any time.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/slide2.jpg" class="d-block w-100" alt="Slide 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Wide Range of Courses</h5>
+                    <p>Choose from a variety of subjects and skills to learn.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/slide3.jpg" class="d-block w-100" alt="Slide 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Expert Instructors</h5>
+                    <p>Learn from industry experts and experienced professionals.</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!-- Additional Content -->
+    <div class="container mt-5 pt-5">
+        <div class="content-section">
+            <h2 class="text-center">Why Choose Us?</h2>
+            <p class="text-center">We provide the best online learning experience with a wide range of courses, expert instructors, and flexible learning schedules.</p>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="images/quality.jpeg" class="card-img-top" alt="Quality Courses">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Quality Courses</h3>
+                            <p class="card-text">Our courses are designed by industry experts to ensure you get the best learning experience.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="images/flexible.jpeg" class="card-img-top" alt="Flexible Learning">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Flexible Learning</h3>
+                            <p class="card-text">Learn at your own pace and schedule. Access course materials anytime, anywhere.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="images/community.jpg" class="card-img-top" alt="Supportive Community">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Supportive Community</h3>
+                            <p class="card-text">Join a community of learners and get support from instructors and peers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
